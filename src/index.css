@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  overflow-x: hidden;
+}
+.dashboard-layout{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+
+}
+
+@media(max-width:640px){
+  .dashboard-layout{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+  
+  }
+}
+
+@media(max-width:440px){
+  .dashboard-layout{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+  
+  }
+}
+th{
+  background-color: #f3f4f6 !important;
+}
